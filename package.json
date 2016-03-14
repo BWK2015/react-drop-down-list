@@ -1,0 +1,21 @@
+{
+  "name": "sgreactproject2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babelify": "^7.2.0",
+    "babel-preset-react": "^6.5.0",
+    "browserify": "^13.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "watchify": "^3.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "watchify src/main.js -v -t [babelify --presets [ react ] ] -o public/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
